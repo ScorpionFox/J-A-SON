@@ -1,0 +1,28 @@
+.App {
+    font-family: sans-serif;
+    text-align: center;
+  }
+  
+  .post {
+    display: flex;
+    width: 600px;
+    justify-content: center;
+    margin: 5px auto;
+    border: solid 1px black;
+  }
+  
+  .pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .pagination span {
+    cursor: pointer;
+    margin: 0 10px;
+    font-weight: bold;
+  }
+
+  .pagination span:hover{
+    color:red;
+  }

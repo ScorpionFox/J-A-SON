@@ -39,7 +39,7 @@ function NavBar() {
 
         <div className={classes.navBar}>
             <Link to="/">
-                <img src={logo} className={classes.logo} alt="logo" />
+                <img src="./logo.png" className={classes.logo} alt="logo" />
             </Link>
             <div className={classes.links}>
                 {/* potencjalny search bar czy cos*/}
