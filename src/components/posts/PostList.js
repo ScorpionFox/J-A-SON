@@ -123,30 +123,32 @@ const PostList = () => {
   };
 
   return (
-    <div>
-      <h1>Posts</h1>
-      <AddPost onAddPost={onAddPost} />
-      {posts.map((post) => (
-        <Post
-          key={post.id}
-          post={post}
-          onSelectPost={(selectedPost) => setSelectedPost(selectedPost)}
-          onDeletePost={onDeletePost}
-          fetchPosts={fetchPosts}
-          fetchComments={fetchComments}
-          onEditPost={onEditPost}
-        />
-      ))}
-      <div className="pagination">
-        {[...Array(Math.ceil(100 / postsPerPage)).keys()].map((number) => (
-          <span key={number + 1} onClick={() => paginate(number + 1)}>
-            {number + 1}
-          </span>
+    <div className="post-list-container">
+      <div className="posts-container">
+        <h1 className='hpost'>📜Posts</h1>
+        <AddPost onAddPost={onAddPost} />
+        {posts.map((post) => (
+          <Post
+            key={post.id}
+            post={post}
+            onSelectPost={(selectedPost) => setSelectedPost(selectedPost)}
+            onDeletePost={onDeletePost}
+            fetchPosts={fetchPosts}
+            fetchComments={fetchComments}
+            onEditPost={onEditPost}
+          />
         ))}
+        <div className="pagination">
+          {[...Array(Math.ceil(100 / postsPerPage)).keys()].map((number) => (
+            <span key={number + 1} onClick={() => paginate(number + 1)}>
+              {number + 1}
+            </span>
+          ))}
+        </div>
       </div>
       {selectedPost ? (
         <div>
-          <h2>Here are Comments for Post {selectedPost.id}</h2>
+          <h2 className='hpost'>Here are Comments for Post {selectedPost.id}</h2>
           {selectedPost.comments && selectedPost.comments.length > 0 ? (
             <ul>
               {selectedPost.comments.map((comment) => (

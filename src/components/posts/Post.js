@@ -35,8 +35,8 @@ export const Post = ({
         <form onSubmit={handleOnEditSubmit}>
           <div>
             <span className="post-title">
-              <strong>Title:</strong>
-            </span>
+              <strong>✒️Title:</strong>
+            </span> <br/>
             <input
               type="text"
               value={editedPost.title}
@@ -46,9 +46,9 @@ export const Post = ({
             />
           </div>
           <div>
-            <span className="post-body">
-              <strong>Content:</strong>
-            </span>
+            <span className="post-body" >
+              <strong>📑Content:</strong>
+            </span><br/>
             <textarea
               value={editedPost.body}
               onChange={(e) =>
@@ -62,14 +62,14 @@ export const Post = ({
         <div>
           <div>
             <span className="post-title">
-              <strong>Title:</strong>
+              <strong>✒️Title:</strong>
               <br />
               {post.title}
             </span>
           </div>
           <div>
             <span className="post-body">
-              <strong>Content:</strong>
+              <strong>📑Content:</strong>
               <br /> {post.body}
             </span>
           </div>

@@ -1,5 +1,4 @@
 import { createUseStyles } from 'react-jss';
-import logo from '../logo.svg';
 import { Link } from 'react-router-dom';
 import { Carousel } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';

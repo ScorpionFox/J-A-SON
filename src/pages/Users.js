@@ -1,5 +1,4 @@
 import { createUseStyles } from 'react-jss';
-import logo from '../logo.svg';
 import { companyVersions } from '../data/companyData';
 import { useState, useEffect } from 'react';
 import UserCard from '../components/UserCard';

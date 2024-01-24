@@ -15,7 +15,6 @@ const styles = createUseStyles({
     top: '100px',
     position: 'absolute',
     left: '100px',
-    backgroundColor: 'rgb(100, 100, 100)',
   },
 });
 

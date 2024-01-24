@@ -10,9 +10,9 @@ export const AddPost = ({ onAddPost }) => {
 
   return (
     <form onSubmit={handleOnSubmit}>
-      <h3>Add Post</h3>
-      <input placeholder="Title" name="title" />
-      <textarea placeholder="Body" name="body" />
+      <h3 className="hpost">Add Post</h3>
+      <input placeholder="✒️Title" name="title" /><br/>
+      <textarea placeholder="📑Content" name="body" /><br/>
       <button type="submit">Add</button>
       <hr />
     </form>
